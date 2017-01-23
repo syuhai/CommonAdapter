@@ -17,7 +17,7 @@ public class ViewHolder {
     private ViewHolder(Context context, int resId){
        convertView= LayoutInflater.from(context).inflate(resId,null);
        convertView.setTag(this);
-       subViews=new SparseArray<>();
+       subViews=new SparseArray<View>();
     }
     public static ViewHolder getInstance(View convertView,int resId,Context context){
         ViewHolder vh;
